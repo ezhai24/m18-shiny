@@ -14,9 +14,9 @@ shinyUI(fluidPage(
   selectInput("color",
               "Color",
               choices = c("Purple" = "#7c43c6", "Yellow" = "#fff02b", "Green" = "#1abc45", "Pink" = "#ff93de"),
-              selected = "Purple")
+              selected = "Purple"),
   
   # Plot the output with the name "scatter"
-  
+  plotOutput("scatter")
   
 ))
